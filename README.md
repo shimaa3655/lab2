@@ -14,3 +14,14 @@ Combine Local and Remote Removal:
 If you want to delete a branch both locally and remotely in one command, you can use:
 git push origin --delete branch_name
 git branch -d branch_name
+how to list tag 
+git tag
+git tag -l "v1.*"
+git show-ref --tags
+how to delet tag locally and remotly
+Delete the local tag:
+git tag -d <tag_name>
+Delete Remotely:
+git push origin --delete <tag_name>
+Combined Command (Local and Remote):
+git tag -d <tag_name> && git push origin --delete <tag_name>
